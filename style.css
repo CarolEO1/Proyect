@@ -142,7 +142,7 @@ button{
 
 /* carrusel publicidad*/
 
-.carrousel{
+ .carrousel{
     width: 100%;
 }
 
@@ -183,16 +183,16 @@ button{
 }
 
 #itemCarrousel-1{
-   background-image: url(Imagenes/99a0c454-a87c-4a12-bf83-c6e4fb970098.jpg);
-
+    background-image: url(Imagenes/99a0c454-a87c-4a12-bf83-c6e4fb970098.jpg);
+    
 }
 
 #itemCarrousel-2{
-    background-color: rgb(50, 200, 226);
+  background-image: url(Imagenes/9e4fb903-cf87-4ca0-880a-146f998395ab.jpg);
 }
 
 #itemCarrousel-3{
-    background-color: rgb(200, 226, 50);
+    background-image: url(Imagenes/5ed9e971-a0f8-4fb4-8478-7d13ee9c7473.jpg);
 }
 
 .conteCarrouselController{
@@ -208,8 +208,27 @@ button{
 }
 
 .itemCarrouselArrows > a > i{
-    color: white;
+    color: black;
+} 
+.carrousel .conteCarrousel{
+    display: flex;
+    animation: cambio 7s infinite 
+    alternate linear;
+    width: 300%;
 }
+
+@keyframes cambio{
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;} 
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;} 
+
+ }
+
 
 /* carrusel publicidad fin */
 
@@ -223,7 +242,7 @@ button{
     /* Cuadro Superior */
     width: 100%;
     background-color: #0093b7;
-    margin-top: 50%;
+    margin-top: 20%;
 }
 .pie-pagina .grupo-1{
     width: 100%;
