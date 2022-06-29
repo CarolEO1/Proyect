@@ -139,12 +139,20 @@ button{
 }
 
 
-
 /* carrusel publicidad*/
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img {
+    width: 100%;
+    height: 100%;
+}
 .carrousel{
     width: 100%;
-
+    margin-top: 80px;
 }
 
 .conteCarrousel{
@@ -157,6 +165,7 @@ button{
     position: relative;
     width: 100%;
     height: 100%;
+    
 }
 
 .itemCarrouselTarjeta{
@@ -165,7 +174,6 @@ button{
 }
 
 .itemCarrouselArrows{
-    margin-top: 40px;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -183,26 +191,17 @@ button{
     cursor: pointer;
 }
 
-img {
-max-width: 100%;
-max-height: 100%;
-}
 #itemCarrousel-1{
-
-    /* background-image: url(Imagenes/99a0c454-a87c-4a12-bf83-c6e4fb970098.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%  */
+    background-color: rgb(226, 50, 50);
 }
 
 #itemCarrousel-2{
-  background-image: url(Imagenes/9e4fb903-cf87-4ca0-880a-146f998395ab.jpg);
-  background-repeat: no-repeat;
+    background-color: rgb(50, 200, 226);
 }
 
 #itemCarrousel-3{
-    background-image: url(Imagenes/5ed9e971-a0f8-4fb4-8478-7d13ee9c7473.jpg);
-    background-repeat: no-repeat;
-} 
+    background-color: rgb(200, 226, 50);
+}
 
 .conteCarrouselController{
     width: 100%;
@@ -217,31 +216,26 @@ max-height: 100%;
 }
 
 .itemCarrouselArrows > a > i{
-    color: black;
-} 
- .carrousel .conteCarrousel{
+    color: white;
+  
+}
+
+.carrousel .conteCarrousel{
     display: flex;
-    animation: cambio 7s infinite 
-    alternate linear;
+    animation: cambio 10s infinite alternate; 
+    animation-timing-function: linear;
     width: 300%;
 } 
 
-  @keyframes cambio{
-    0%{margin-left: 0;}
+@keyframes cambio{
+    00%{margin-left: 0;}
     20%{margin-left: 0;}
 
     25%{margin-left: -100%;}
     45%{margin-left: -100%;} 
 
     50%{margin-left: -200%;}
-    70%{margin-left: -200%;} 
-
- } 
-
-
-/* carrusel publicidad fin */
-
-/* Body*/
+    70%{margin-left: -200%;} }
 
 
 /* Footer*/
